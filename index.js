@@ -30,7 +30,7 @@ function save(event) {
             msg.style.display='none';
         }, 3000);
     }
-    else if (startDate === '' && endDate === '' && note === '') {
+    else if (!startDate || !endDate || !note) {
         console.log('every field must be filled')
         msg.style.display='flex';
         msg.textContent = "No user Input Found";
@@ -44,7 +44,7 @@ function save(event) {
     }
     else{
         console.log("new task added")
-        msg.background= "rgb(1, 159, 1)";
+        msg.style.background= "rgb(1, 159, 1)";
         msg.style.display='flex';
         msg.textContent = "Task Added ✓";
         msg.style.borderBottom= "2px solid rgb(1, 141, 1)";
