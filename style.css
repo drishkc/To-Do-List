@@ -1,0 +1,29 @@
+.tasksList {
+    display: block;
+}
+.checkTask {
+    display: block;
+}
+.msg {
+    height: 20px;
+    width: 100px;
+    display: none;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.msg-done {
+    height: 20px;
+    width: 100px;
+    background: rgb(1, 159, 1);
+    display: none;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgb(1, 141, 1)
+}
+.msg p {
+    color: white;
+}

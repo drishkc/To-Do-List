@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="msg-done" id="msg">
+        
+    </div>
+
+    <h2>Add New Task</h2>
+    <form action="" id="myForm">
+        <input type="date" id="sDate"  placeholder="startDate">
+        <input type="date" id="eDate"  placeholder="startDate">
+        <input type="text" id="note" placeholder="Note">
+        <button type="submit">Save</button>
+    </form>
+
+    <h2>Task's</h2>
+    <div class="tasksList" id="tasksList">
+        <div id="task1"><p>2082-09-12, 2083-01-01, finish task <input type="checkbox"></p></div>
+        <div id="task2"><p>2082-09-12, 2083-01-01, finish task <input type="checkbox"></p></div>
+        <div id="task3"><p>2082-09-12, 2083-01-01, finish task <input type="checkbox"></p></div>
+        <div id="task4"><p>2082-09-12, 2083-01-01, finish task <input type="checkbox"></p></div>
+        <div id="task5"><p>2082-09-12, 2083-01-01, finish task <input type="checkbox"></p></div>
+    </div>
+
+    <h2>Check Pending Task's</h2>
+    <form action="" id="myForm">
+        <button onclick="checkTask()">Check Pending Taks:</button>
+        <div id="checTasks" class="checkTask">
+        <div id="taks"><p>2082-09-12, 2083-01-01, finish task <input type="radio"></p></div>
+
+    </div>
+    </form>
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

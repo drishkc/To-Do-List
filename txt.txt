@@ -1,0 +1,6 @@
+obj = day , time , note
+
+function addNewtask = when clicked adds new task with day, time and note
+function complateTask = when clicked checks the task as done
+function taskCheck = when clicked checks if the task is done or not if all task done sends message all task has been completed if not shows remaining task
+function deleteTask = when clicked deletes the selected task
