@@ -31,27 +31,53 @@ body h1{
 
 .contOne {
     background: #1E3A5F;
-    width: 76%;
+    width: 60vh;
     border-radius: 24px;
     box-shadow: 4px 0 10px #000000a9;
     color: white;
     overflow: hidden;
     transition: 0.3s;
     display: flex;
-    height: 8rem;
+    height: 5rem;
+    justify-content: space-between;
+    padding: 14px;
 }
-.info{
-    padding: 12px;
-    display: inline-flex;
-    flex-direction: column;
-    transition: 0.3s;
-    width: 40rem;
+.contOne span {
+    background-color: rgb(191, 0, 0);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 14px;
 }
-.info h3{
-    font-weight: bold;
+.contOne span:hover {
+    background: red;
+    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.957);
 }
-.info p{
-    color: rgba(255, 255, 255, 0.54);
+.contOne::before {
+    content: "";
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.checked::before{
+    text-decoration: line-through;
+    content:'';
+    display: flex;
+    background: green;
+}
+.liChecked {
+    text-decoration: line-through;
+}
+
+.para{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.963);
     margin-top: 8px;
 }
 .del {
@@ -59,7 +85,7 @@ body h1{
     pointer-events: knone;
     transition: opacity 0.2s ease;
     background: rgb(193, 2, 2);
-    width: 22%;
+    width: 14%;
     display: none;
     justify-content: center;
     align-items: center;
@@ -86,24 +112,24 @@ body h1{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 68%;
+    width: 60vh;
     border-radius: 14px;
     background: #1E3A5F;
     padding: 10px;
     margin: 14px;
-    height: 16%;
+    height: 12%;
 }
 .inputField input {
     outline: #0A1A2F;
     width: 100%;
-    height: 100px;
+    height: 60px;
     border-radius: 6px;
     border: none;
     padding: 4px;
 }
 .inputField button {
-    width: 40%;
-    height: 100px;
+    width: 30%;
+    height: 60px;
     background: blue;
     border-radius: 6px;
     color: white;
@@ -115,10 +141,10 @@ body h1{
 }
 .deleteOption {
     position: fixed;
-    top: 50%;
+    top: 30%;
     display: none;
-    width: 80%;
-    height: 40%;
+    width: 30%;
+    height: 20%;
     background: #1E3A5F;
     border-radius: 18px;
     z-index: 1;
@@ -172,4 +198,9 @@ body h1{
     transform: scale(1.1);
     background: rgb(83, 195, 49);
     color: white;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
