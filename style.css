@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   padding: 0 10%;
   text-align: center;
+  position: relative;
 }
 .completed {
   text-decoration: line-through;
@@ -80,3 +81,55 @@ h1 {
 button:hover {
   transform: translateY(-4px);
 }
+.editBtn {
+  background-color: rgb(231, 206, 15);
+  color: white;
+}
+.bgblur div {
+  position: absolute;
+  top: 30%;
+  background: rgb(66, 66, 66);
+  width: 36%;
+  max-width: 400px;
+  height: 16%;
+  max-height: 200px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  align-items: center;
+  box-shadow: 0 0 12px rgb(29, 28, 28);
+}
+.bgblur {
+  background-color: rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: c;
+  height: 100%;
+}
+
+.bgblur div input {
+  width: 86%;
+  border-radius: 6px;
+  border: none;
+  margin-top: 4px;
+}
+.editButton {
+  color: white;
+  background-color: rgb(0, 106, 255);
+  margin-top: 14px;
+  border-radius: 24px;
+  outline: none;
+  border: none;
+  width: 20%;
+}
+/* body {
+  background-color: white;
+} */

@@ -57,8 +57,12 @@ function renderTasks() {
     let completeBtn = document.createElement("button");
     completeBtn.innerText = "complete";
     completeBtn.classList.add("completeBtn");
-
     completeBtn.onclick = () => completeTask(index);
+
+    let editBtn = document.createElement("button");
+    editBtn.innerText = "edit";
+    editBtn.classList.add("editBtn");
+    editBtn.onclick = () => editTaskPanel(element, index);
 
     div.className = "divCont";
 
@@ -70,10 +74,39 @@ function renderTasks() {
     div.appendChild(desc);
     div.appendChild(completeBtn);
     div.appendChild(deleteBtn);
+    div.appendChild(editBtn);
     output.appendChild(div);
   });
 }
+const editPanel = document.querySelector("#bgblur");
 
+function editTaskPanel(element, index) {
+  const editPanel = document.querySelector("#bgblur");
+  editPanel.classList.toggle("bgblur");
+
+  let editTitle = document.querySelector(".editTitle");
+  let editDesc = document.querySelector(".editDesc");
+
+  editTitle.value = element.title;
+  editDesc.value = element.description;
+
+  const editButton = document.querySelector(".editButton");
+
+  editButton.onclick = null;
+
+  editButton.addEventListener("click", () => {
+    arr[index].title = editTitle.value;
+    arr[index].description = editDesc.value;
+    localStorage.setItem("tasks", JSON.stringify(arr));
+    editPanel.classList.toggle("bgblur");
+    renderTasks();
+  });
+}
+document.addEventListener("click", (e) => {
+  if (e.target === editPanel) {
+    editPanel.classList.toggle("bgblur");
+  }
+});
 function deleteTask(index) {
   arr.splice(index, 1);
   localStorage.setItem("tasks", JSON.stringify(arr));
