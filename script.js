@@ -3,7 +3,7 @@ const btn = document.querySelector("#btn");
 const input = document.querySelector("#inpBox");
 const inputDesc = document.querySelector("#inpBoxDesc");
 
-input.addEventListener("keydown", (e) => {
+document.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     addTask();
   }
