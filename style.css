@@ -114,7 +114,9 @@ button:hover {
   align-items: c;
   height: 100%;
 }
-
+#editContainer {
+  display: none;
+}
 .bgblur div input {
   width: 86%;
   border-radius: 6px;
@@ -130,6 +132,3 @@ button:hover {
   border: none;
   width: 20%;
 }
-/* body {
-  background-color: white;
-} */

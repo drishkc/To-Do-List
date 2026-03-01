@@ -82,7 +82,9 @@ const editPanel = document.querySelector("#bgblur");
 
 function editTaskPanel(element, index) {
   const editPanel = document.querySelector("#bgblur");
+  const editCont = document.querySelector("#editContainer");
   editPanel.classList.toggle("bgblur");
+  editCont.style.display = "flex";
 
   let editTitle = document.querySelector(".editTitle");
   let editDesc = document.querySelector(".editDesc");
@@ -98,13 +100,17 @@ function editTaskPanel(element, index) {
     arr[index].title = editTitle.value;
     arr[index].description = editDesc.value;
     localStorage.setItem("tasks", JSON.stringify(arr));
+    editCont.style.display = "none";
     editPanel.classList.toggle("bgblur");
+
     renderTasks();
   });
 }
 document.addEventListener("click", (e) => {
   if (e.target === editPanel) {
+    const editCont = document.querySelector("#editContainer");
     editPanel.classList.toggle("bgblur");
+    editCont.style.display = "none";
   }
 });
 function deleteTask(index) {
