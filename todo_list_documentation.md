@@ -201,9 +201,3 @@ document.addEventListener("click", (e) => {
 - Allows closing the edit modal by clicking **outside the panel**
 
 ---
-
-## Future Improvements
-
-- Convert to **React** for better state management
-- Add **drag-and-drop** task sorting
-- Connect to a **backend database** for persistent s
