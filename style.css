@@ -8,6 +8,7 @@ body {
 .completed {
   text-decoration: line-through;
 }
+
 h1 {
   color: white;
 }
