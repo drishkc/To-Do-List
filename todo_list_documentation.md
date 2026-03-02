@@ -17,6 +17,7 @@
 ## File Structure
 
 todo-app/
+
 │
 
 ├─ index.html          # Main HTML file
