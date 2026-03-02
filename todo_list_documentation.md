@@ -18,8 +18,11 @@
 
 todo-app/
 │
+
 ├─ index.html          # Main HTML file
+
 ├─ style.css           # Styling for the app
+
 └─ script.js           # JavaScript functionality
 
 ---
